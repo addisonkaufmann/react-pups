@@ -1,0 +1,56 @@
+.breed,
+.title {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+.app {
+  margin: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.scrollable-column {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  height: 90vh;
+
+  a {
+    padding: 1px;
+    padding-left: 5px;
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #007bff;
+}
+
+.tab-content {
+  margin-left: 20px;
+}
+
+.random-button {
+  margin-left: 10px;
+  padding: 2px;
+  border: none;
+}
