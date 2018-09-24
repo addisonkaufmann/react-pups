@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
   },
-  "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
+  "homepage": "https://addisonkaufmann.github.io/react-pups",
   "scripts": {
     "build": "yarn run clean-dist && webpack -p --config=configs/webpack/prod.js",
     "clean-dist": "rm -f -r -d dist",
@@ -31,7 +31,9 @@
     "start": "yarn run start-dev",
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
-    "test": "jest --watch --coverage --config=configs/jest.json"
+    "test": "jest --watch --coverage --config=configs/jest.json",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -70,6 +72,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "gh-pages": "^2.0.0"
   }
 }
