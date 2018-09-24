@@ -1,7 +1,8 @@
 {
-  "name": "react-webpack-typescript-starter",
+  "homepage": "https://addisonkaufmann.github.io/react-pups",
+  "name": "react-pups",
   "version": "0.1.0",
-  "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
+  "description": "react starter with pups",
   "keywords": [
     "react",
     "webpack",
@@ -12,16 +13,15 @@
     "starter",
     "boilerplate"
   ],
-  "author": "Viktor Persson",
+  "author": "Addison Kaufmann",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"
+    "url": "git+https://github.com/addisonkaufmann/react-pups.git"
   },
   "bugs": {
-    "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
+    "url": "https://github.com/addisonkaufmann/react-pups.git/issues"
   },
-  "homepage": "https://addisonkaufmann.github.io/react-pups",
   "scripts": {
     "build": "yarn run clean-dist && webpack -p --config=configs/webpack/prod.js",
     "clean-dist": "rm -f -r -d dist",
