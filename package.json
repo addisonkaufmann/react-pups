@@ -13,7 +13,10 @@
     "starter",
     "boilerplate"
   ],
-  "author": "Addison Kaufmann",
+  "author": {
+    "name": "Addison Kaufmann", 
+    "email": "addisonkaufmann@email.arizona.edu"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,7 +36,7 @@
     "start-prod": "yarn run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --user \"Addison Kaufmann <addisonkaufmann@email.arizona.edu>\""
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
